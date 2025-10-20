@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Shijian - AI Agent Engineer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+            background: #f6f8fa;
+            padding: 20px;
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            background: white;
+            margin: 0 auto;
+            padding: 25mm 20mm;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        header {
+            border-bottom: 3px solid #2da44e;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #24292f;
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+
+        .title {
+            color: #2da44e;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            color: #555;
+            font-size: 14px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        section {
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            color: #24292f;
+            font-size: 20px;
+            border-bottom: 2px solid #2da44e;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .summary {
+            color: #57606a;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .experience-item, .education-item, .project-item {
+            margin-bottom: 20px;
+        }
+
+        .job-header, .edu-header, .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 8px;
+        }
+
+        .job-title, .degree, .project-name {
+            font-weight: 700;
+            color: #24292f;
+            font-size: 16px;
+        }
+
+        .company, .school {
+            color: #2da44e;
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        .date {
+            color: #57606a;
+            font-size: 13px;
+            font-style: italic;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-top: 8px;
+        }
+
+        li {
+            margin-bottom: 6px;
+            color: #57606a;
+            line-height: 1.5;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .skill-category {
+            margin-bottom: 10px;
+        }
+
+        .skill-category strong {
+            color: #24292f;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .skill-list {
+            color: #57606a;
+            line-height: 1.6;
+        }
+
+        .subsection {
+            margin-bottom: 18px;
+        }
+
+        .subsection h3 {
+            color: #24292f;
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            margin-top: 0;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .page {
+                width: 210mm;
+                height: 297mm;
+                margin: 0;
+                padding: 0;
+                box-shadow: none;
+                page-break-after: always;
+            }
+
+            @page {
+                size: A4;
+                margin: 20mm 15mm;
+            }
+
+            * {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <header>
+            <h1>Ma Shijian</h1>
+            <div class="title">AI Agent Engineer</div>
+            <div class="contact">
+                <div class="contact-item">📧 mas8069@foxmail.com</div>
+                <div class="contact-item">📱 +44 7421468631</div>
+                <div class="contact-item">🔗 mashijian.com</div>
+                <div class="contact-item">💻 github.com/IIIIQIIII</div>
+            </div>
+        </header>
+
+        <section>
+            <h2>Professional Summary</h2>
+            <p class="summary">
+                Innovative AI Agent Engineer with expertise in developing intelligent autonomous systems and multi-agent architectures. Specialized in large language models, reinforcement learning, and agent-based frameworks. Proven track record in designing and deploying production-ready AI agents for complex decision-making tasks. Passionate about advancing the frontier of artificial intelligence through practical agent systems that solve real-world problems.
+            </p>
+        </section>
+
+        <section>
+            <h2>Professional Experience</h2>
+            
+            <div class="experience-item">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Visiting Student</div>
+                        <div class="company">UCL Robot Perception and Learning Lab</div>
+                    </div>
+                    <div class="date">Jan 2025 - Jun 2025</div>
+                </div>
+                <ul>
+                    <li>Conducted research under the supervision of Prof. Dimitrios Kanoulas and Dr. Jianhao Jiao</li>
+                    <li>Implemented real-time object tracking and position-based planning on Unitree Go2 quadruped robot platform</li>
+                    <li>Developed end-to-end environmental mapping system integrating predefined knowledge graphs with real-time observations</li>
+                    <li>Integrated scene graphs, vision-language models, and graph-based retrieval-augmented generation for indoor navigation</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Graduate Researcher - Robotics</div>
+                        <div class="company">University of Macau</div>
+                    </div>
+                    <div class="date">Aug 2023 - Dec 2024</div>
+                </div>
+                <ul>
+                    <li>Developed embodied AI system for humanized operations on short video platforms</li>
+                    <li>Built low-cost unmanned surface vessel equipped with action camera for water photography and 3D reconstruction</li>
+                    <li>Developed obstacle avoidance system with object recognition and depth estimation capabilities</li>
+                    <li>Implemented KAN layers to replace MLP layers for feature embedding in iPlanner</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Graduate Researcher - Machine Learning</div>
+                        <div class="company">University of Macau</div>
+                    </div>
+                    <div class="date">Aug 2023 - Dec 2024</div>
+                </div>
+                <ul>
+                    <li>Conducted research under the supervision of Prof. Zeng Jicheng and Prof. Lin Yan</li>
+                    <li>Collected 330,000 game reviews and utilized large language models for automated game analysis</li>
+                    <li>Built synthetic game review dataset for training game issue comment checker and released as open-source</li>
+                    <li>Applied difference-in-differences methodology to study the impact of large language models (e.g., GPT) on HuggingFace</li>
+                    <li>Conducted music analysis of Suno songs combining music theory, signal processing, and machine learning techniques</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Undergraduate Researcher</div>
+                        <div class="company">University College Dublin</div>
+                    </div>
+                    <div class="date">Dec 2021 - Aug 2023</div>
+                </div>
+                <ul>
+                    <li>Developed end-to-end TCMFormer Traditional Chinese Medicine diagnostic model based on TCM theory</li>
+                    <li>Created business report visualization website utilizing commercial data</li>
+                    <li>Validated multiple machine learning algorithms using public datasets and published research papers</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Research Assistant</div>
+                        <div class="company">Green Bay Marine Technology Co., Ltd.</div>
+                    </div>
+                    <div class="date">Jun 2020 - Oct 2022</div>
+                </div>
+                <ul>
+                    <li>Collaborated with Prof. Xiao Li's robotics team at Huazhong University of Science and Technology</li>
+                    <li>Developed autonomous navigation system for 0.8-meter rescue unmanned surface vessel</li>
+                    <li>Implemented multi-agent reinforcement learning on 1.75-meter unmanned vessel array</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills">
+                <div class="skill-category">
+                    <strong>Agent Frameworks:</strong>
+                    <div class="skill-list">LangChain, AutoGPT, BabyAGI, CrewAI, LangGraph, Semantic Kernel</div>
+                </div>
+                <div class="skill-category">
+                    <strong>LLM & APIs:</strong>
+                    <div class="skill-list">GPT-4, Claude, Gemini, LLaMA, Mistral, OpenAI API, Anthropic API</div>
+                </div>
+                <div class="skill-category">
+                    <strong>Programming:</strong>
+                    <div class="skill-list">Python, TypeScript, JavaScript, C++</div>
+                </div>
+                <div class="skill-category">
+                    <strong>ML/DL Frameworks:</strong>
+                    <div class="skill-list">PyTorch, TensorFlow, Transformers, LangChain, Stable Baselines3</div>
+                </div>
+                <div class="skill-category">
+                    <strong>Vector Databases:</strong>
+                    <div class="skill-list">Pinecone, Weaviate, Chroma, Qdrant, FAISS</div>
+                </div>
+                <div class="skill-category">
+                    <strong>Tools & Platforms:</strong>
+                    <div class="skill-list">Docker, Kubernetes, AWS, GCP, FastAPI, Redis, PostgreSQL</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Publications</h2>
+            
+            <div class="subsection">
+                <ul>
+                    <li><strong>Qianyi Zhang, Shijian Ma, Boyi Liu, Jianhao Jiao, Dimitrios Kanoulas.</strong> "Follow Everything: A Leader-Following and Obstacle Avoidance Framework with Goal-Aware Adaptation." <em>arXiv</em>, 2025.</li>
+                    
+                    <li><strong>Shijian Ma, Shicong Ma, Jianhao Jiao.</strong> "RoboAgent: An Integrated Hardware-Software Agent for Short Video Interactions." <em>TechRxiv</em>, 2024.</li>
+                    
+                    <li><strong>Shijian Ma, Shicong Ma, Jianhao Jiao.</strong> "WaveDepth: Enabling Water Depth Estimation with Water Segmentation." <em>TechRxiv</em>, 2024.</li>
+                    
+                    <li><strong>Shijian Ma, Shicong Ma, Jianhao Jiao.</strong> "WaveShot: A Compact Portable Unmanned Surface Vessel for Dynamic Water Surface Videography and Media Production." <em>arXiv</em>, 2024. AIME accept.</li>
+                    
+                    <li><strong>Shijian Ma, Shicong Ma.</strong> "Exploring the Relationship between Vehicle Specifications and Fuel Efficiency using Random Forest Regression and Gradient Boosting Regression Models." <em>ECCS</em>, 2024.</li>
+                    
+                    <li><strong>Shijian Ma.</strong> "Churn Prediction in Business using Logistic Regression and Logit Boost." <em>ICDSCA</em>, 2023.</li>
+                    
+                    <li><strong>Shicong Ma, Xiaoguang Tang, Shijian Ma.</strong> "Integration of Multi-sensor Marine Environment Monitoring System for Hybrid-Power USV." <em>ICGMRS</em>, 2023.</li>
+                    
+                    <li><strong>Shijian Ma, Xiaoguang Tang, Weize Ma, Jitao Liu, Li Xiao.</strong> "An Unmanned Cleaning Robot for the Inner Wall of Large LNG Tanks." <em>ICARM</em>, 2022.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Key Projects</h2>
+            
+            <div class="project-item">
+                <div class="project-header">
+                    <div class="project-name">FollowEverything: Object Following System for Quadruped Robots</div>
+                    <div class="date">2025</div>
+                </div>
+                <ul>
+                    <li>Implemented real-time object tracking and position-based planning on Go2 quadruped robot</li>
+                    <li>Achieved open-set object following capabilities for diverse target objects</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="project-header">
+                    <div class="project-name">PKER: Prior Knowledge-assisted Environmental Representation</div>
+                    <div class="date">2025</div>
+                </div>
+                <ul>
+                    <li>Created maps by integrating predefined knowledge graphs with real-time observations</li>
+                    <li>Integrated scene graphs, vision-language models, and graph-based RAG</li>
+                    <li>Applied to indoor navigation and scene understanding tasks</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="project-header">
+                    <div class="project-name">RoboAgent: Integrated Hardware-Software Agent</div>
+                    <div class="date">2024</div>
+                </div>
+                <ul>
+                    <li>Developed an autonomous social media interaction system</li>
+                    <li>Utilized computer vision for precise interface recognition and physical interaction</li>
+                    <li>Generated contextually relevant content through large language models</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="project-header">
+                    <div class="project-name">Unmanned Patrol Boat</div>
+                    <div class="date">2024</div>
+                </div>
+                <ul>
+                    <li>Designed a USV with real-time camera and audio transmission</li>
+                    <li>Integrated 4G module for remote video streaming</li>
+                    <li>Combined LLMs with music generation and 3D generation models</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="project-header">
+                    <div class="project-name">WaveDepth: Water Depth Estimation System</div>
+                    <div class="date">2024</div>
+                </div>
+                <ul>
+                    <li>Combined water semantic segmentation with water scene depth estimation</li>
+                    <li>Constructed specialized water scene depth estimation dataset</li>
+                    <li>Designed lightweight real-time estimation model optimized for edge devices</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="project-header">
+                    <div class="project-name">Underwater Perception Systems</div>
+                    <div class="date">2024</div>
+                </div>
+                <ul>
+                    <li>Developed USV-based underwater scene depth estimation system</li>
+                    <li>Integrated single-beam sonar and RTK-GPS for underwater 3D reconstruction</li>
+                    <li>Built Nginx-based point cloud visualization server</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="project-header">
+                    <div class="project-name">WaveShot: Portable USV for Water Videography</div>
+                    <div class="date">2024</div>
+                </div>
+                <ul>
+                    <li>Designed lightweight and portable water surface filming unmanned vessel</li>
+                    <li>Implemented innovative highly maneuverable water surface photography method</li>
+                    <li>Integrated monocular depth estimation algorithm to enhance spatial awareness</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="project-header">
+                    <div class="project-name">MS-HNN: Mirror Symmetry Hodge Neural Network</div>
+                    <div class="date">2024</div>
+                </div>
+                <ul>
+                    <li>Designed neural network architecture integrating mirror symmetry and Hodge theory</li>
+                    <li>Developed network components including Hodge duality layers and symmetry modules</li>
+                    <li>Achieved superior performance on data with intrinsic symmetry</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="project-header">
+                    <div class="project-name">TCM AI Systems</div>
+                    <div class="date">2023</div>
+                </div>
+                <ul>
+                    <li>Developed tongue diagnosis model based on ResNet and mobile application</li>
+                    <li>Created TCMFormer model with expanded Traditional Chinese Medicine terminology</li>
+                    <li>Implemented ALiBi positional encoding and LoRA fine-tuning</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="project-header">
+                    <div class="project-name">MatroidNN: Matroid-based Feature Selection</div>
+                    <div class="date">2023</div>
+                </div>
+                <ul>
+                    <li>Developed feature selection method based on matroid theory</li>
+                    <li>Created correlation-based dependency analysis for identifying maximally independent feature sets</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="project-header">
+                    <div class="project-name">Machine Learning Projects</div>
+                    <div class="date">2022-2023</div>
+                </div>
+                <ul>
+                    <li>Real Estate Price Analysis: Comprehensive machine learning analysis of property prices</li>
+                    <li>MPG Prediction: Applied Random Forest and Gradient Boosting regression models</li>
+                    <li>Student Writing Score Prediction: Implemented SVM and kNN algorithms</li>
+                    <li>Laptop Price Prediction: Comparative analysis of regression models</li>
+                    <li>Business Churn Prediction: Applied Logistic Regression and Logit Boost algorithms</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="project-header">
+                    <div class="project-name">Multi-sensor Marine Environment Monitoring System</div>
+                    <div class="date">2022</div>
+                </div>
+                <ul>
+                    <li>Collaborated on field testing and co-authored conference paper for hybrid-power USV</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="project-header">
+                    <div class="project-name">LNG Tank Cleaning Robot</div>
+                    <div class="date">2022</div>
+                </div>
+                <ul>
+                    <li>Enhanced robot stability through extended buoyancy system redesign</li>
+                    <li>Implemented modular battery system for easier maintenance and replacement</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <div class="education-item">
+                <div class="edu-header">
+                    <div>
+                        <div class="degree">Visiting Student, Computer Science</div>
+                        <div class="school">University College London (UCL) | London, United Kingdom</div>
+                    </div>
+                    <div class="date">Jan 2025 - Jun 2025</div>
+                </div>
+            </div>
+            <div class="education-item">
+                <div class="edu-header">
+                    <div>
+                        <div class="degree">Master of Science in Data Science</div>
+                        <div class="school">University of Macau (UM) | Macau, China</div>
+                    </div>
+                    <div class="date">Aug 2023 - Jun 2025</div>
+                </div>
+            </div>
+            <div class="education-item">
+                <div class="edu-header">
+                    <div>
+                        <div class="degree">Coursework in Master of Information Technology</div>
+                        <div class="school">University of Queensland (UQ) | Brisbane, Australia</div>
+                    </div>
+                    <div class="date">Feb 2022 - Jun 2022</div>
+                </div>
+            </div>
+            <div class="education-item">
+                <div class="edu-header">
+                    <div>
+                        <div class="degree">Bachelor of Marketing</div>
+                        <div class="school">University College Dublin (UCD) | Dublin, Ireland</div>
+                    </div>
+                    <div class="date">Sep 2018 - Jan 2022</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Honors & Achievements</h2>
+            
+            <div class="subsection">
+                <h3>Professional Service</h3>
+                <ul>
+                    <li><strong>Reviewer:</strong> IROS 2025, ICRA 2025, RA-L 2024, IROS 2024</li>
+                </ul>
+            </div>
+
+            <div class="subsection">
+                <h3>Patents</h3>
+                <ul>
+                    <li>Patent No: ZL201420713314.1 - A portable remote control water cleaning boat (2022, China)</li>
+                    <li>Patent No: ZL202130395091.4 - Water surface intelligent cleaning robot (2022, China)</li>
+                </ul>
+            </div>
+
+            <div class="subsection">
+                <h3>Awards</h3>
+                <ul>
+                    <li>Silver Medal (Hubei Province Level), 7th National College Students' "Internet plus" Entrepreneurship Contest (2022, Wuhan, China)</li>
+                    <li>Winner's Prize Award, 16th "Chunhui Cup" Chinese Overseas Students Innovation and Entrepreneurship Competition (2022, Wuhan, China)</li>
+                </ul>
+            </div>
+
+            <div class="subsection">
+                <h3>Certificates</h3>
+                <ul>
+                    <li>Certificate in Data Analysis Professional Skills, Chinese Association for Applied Statistics (CAAS) (2024, China)</li>
+                    <li>Research Camp Program: Academic Training, ViaX Instructor (2022, China)</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
