@@ -48,10 +48,17 @@
 
         .contact {
             display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
+            flex-direction: column;
+            gap: 10px;
             color: #555;
             font-size: 14px;
+        }
+
+        .contact-row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
         }
 
         .contact-item {
@@ -184,19 +191,24 @@
     <div class="page">
         <header>
             <h1>Ma Shijian</h1>
-            <div class="title">AI Engineer</div>
+            <div class="title">AI Researcher</div>
             <div class="contact">
-                <div class="contact-item">📧 mas8069@foxmail.com</div>
-                <div class="contact-item">📱 +44 7421468631</div>
-                <div class="contact-item">🔗 mashijian.com</div>
-                <div class="contact-item">💻 github.com/IIIIQIIII</div>
+                <div class="contact-row">
+                    <div class="contact-item">📧 mas8069@foxmail.com</div>
+                    <div class="contact-item">📱 +44 7421468631</div>
+                    <div class="contact-item">🔗 mashijian.com</div>
+                </div>
+                <div class="contact-row">
+                    <div class="contact-item">💻 github.com/IIIIQIIII</div>
+                    <div class="contact-item">🤗 huggingface.co/FutureMa</div>
+                </div>
             </div>
         </header>
 
         <section>
             <h2>Professional Summary</h2>
             <p class="summary">
-                Innovative AI Agent Engineer with expertise in developing intelligent autonomous systems and multi-agent architectures. Specialized in large language models, reinforcement learning, and agent-based frameworks. Proven track record in designing and deploying production-ready AI agents for complex decision-making tasks. Passionate about advancing the frontier of artificial intelligence through practical agent systems that solve real-world problems.
+                Innovative Agentic AI Researcher with expertise in developing intelligent autonomous systems and multi-agent architectures. Specialized in large language models, reinforcement learning, and agent-based frameworks. Proven track record in designing and deploying production-ready AI agents for complex decision-making tasks. Passionate about advancing the frontier of artificial intelligence through practical agent systems that solve real-world problems.
             </p>
         </section>
 
@@ -207,12 +219,29 @@
                 <div class="job-header">
                     <div>
                         <div class="job-title">Research Assistant</div>
+                        <div class="company">Hong Kong University of Science and Technology</div>
+                    </div>
+                    <div class="date">Jan 2026 - Present</div>
+                </div>
+                <ul>
+                    <li>Conducted research under the supervision of Prof. Yi Yang</li>
+                    <li>Developed Qwen3-4B-Evasion, a fine-tuned model for detecting evasion levels in earnings call Q&A responses, achieving 36 likes and 145 downloads on HuggingFace</li>
+                    <li>Applied Rasiah taxonomy to classify executive responses into three evasion categories</li>
+                    <li>Specialized in analyzing communication patterns during financial earnings calls</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Research Assistant</div>
                         <div class="company">University of Macau</div>
                     </div>
-                    <div class="date">Aug 2025 - Present</div>
+                    <div class="date">Aug 2025 - Dec 2025</div>
                 </div>
                 <ul>
                     <li>Conducted research under the supervision of Prof. Yan LIN and Prof. Hongchuan SHEN</li>
+                    <li>Created DramaBench, an open source benchmark for evaluating drama script continuation, achieving 110 likes and 490+ downloads on HuggingFace</li>
                     <li>Developed Financial Agent for automated financial text analysis and model continuous learning</li>
                     <li>Built Computer Agent capable of automating computer operations through natural language instructions and screen capture analysis</li>
                     <li>Created ShortStudio, an AI-powered short video creation platform that analyzes trending videos and generates similar content</li>
@@ -337,6 +366,8 @@
             
             <div class="subsection">
                 <ul>
+                    <li><strong>Shijian Ma, Yunqi Huang, Yan Lin.</strong> "DramaBench: A Six-Dimensional Evaluation Framework for Drama Script Continuation." <em>arXiv</em>, 2025.</li>
+                    
                     <li><strong>Qianyi Zhang, Shijian Ma, Boyi Liu, Jianhao Jiao, Dimitrios Kanoulas.</strong> "Follow Everything: A Leader-Following and Obstacle Avoidance Framework with Goal-Aware Adaptation." <em>arXiv</em>, 2025.</li>
                     
                     <li><strong>Shijian Ma, Shicong Ma, Jianhao Jiao.</strong> "RoboAgent: An Integrated Hardware-Software Agent for Short Video Interactions." <em>TechRxiv</em>, 2024.</li>
@@ -361,13 +392,38 @@
 
             <div class="project-item">
                 <div class="project-header">
+                    <div class="project-name">Qwen3-4B-Evasion: Financial Communication Analysis Model</div>
+                    <div class="date">2026</div>
+                </div>
+                <ul>
+                    <li>Fine-tuned Qwen3-4B-Instruct-2507 for detecting evasion levels in earnings call Q&A responses</li>
+                    <li>Implemented Rasiah taxonomy-based classification system with three evasion categories</li>
+                    <li>Achieved community adoption with 36 likes and 145 downloads on HuggingFace</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="project-header">
+                    <div class="project-name">DramaBench: Drama Script Evaluation Benchmark</div>
+                    <div class="date">2025</div>
+                </div>
+                <ul>
+                    <li>Developed first large-scale benchmark for evaluating drama script continuation across six independent dimensions</li>
+                    <li>Evaluated 8 state-of-the-art language models on 1,103 scripts with 8,824 total evaluations and rigorous statistical testing</li>
+                    <li>Achieved significant community impact: 110 likes on HuggingFace dataset, 490+ downloads, 16 upvotes on Daily Paper, 78 GitHub stars</li>
+                    <li>Published comprehensive evaluation framework combining rule-based analysis, LLM-based labeling, and statistical metrics</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="project-header">
                     <div class="project-name">Qwen3-8B-Drama-Thinking: Creative Screenwriting AI Model</div>
                     <div class="date">2025</div>
                 </div>
                 <ul>
                     <li>Full parameter fine-tuned Qwen3-8B on 6,319 dramatic script samples using ms-swift framework</li>
                     <li>Achieved +262% output length and +80% thinking depth with explicit creative reasoning chains</li>
-                    <li>Deployed on HuggingFace achieving trending rank #28 with 75 likes and 1,288 downloads</li>
+                    <li>Deployed on HuggingFace achieving trending rank #28 with 89 likes and over 2,000 downloads</li>
                 </ul>
             </div>
 
@@ -379,6 +435,17 @@
                 <ul>
                     <li>Developed intelligent agent for automated financial text analysis and processing</li>
                     <li>Implemented continuous learning mechanism for model adaptation to evolving financial data</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="project-header">
+                    <div class="project-name">XAgent: Intelligent X.com Automation Framework</div>
+                    <div class="date">2025</div>
+                </div>
+                <ul>
+                    <li>Built X.com automation framework based on Claude Agent SDK and Chrome DevTools MCP</li>
+                    <li>Open-sourced project gaining 26 GitHub stars for community contribution</li>
                 </ul>
             </div>
 
@@ -661,4 +728,5 @@
         </section>
     </div>
 </body>
+</html>
 </html>
